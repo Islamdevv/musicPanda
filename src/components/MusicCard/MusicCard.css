@@ -1,0 +1,40 @@
+.spotify-playlists {
+  padding: 20px 20px;
+}
+
+.spotify-playlists .list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.spotify-playlists .list .item {
+  cursor: pointer;
+  transition: all ease 0.4s;
+  background-color: #121212;
+  width: 60%;
+  height: 200px;
+  text-align: center;
+}
+
+.spotify-playlists .list .item:hover {
+  background-color: #252525;
+}
+
+.spotify-playlists .list .item .play {
+  position: relative;
+}
+.spotify-playlists .list .item .play .fa {
+  position: absolute;
+  right: 10px;
+  top: -60px;
+  padding: 18px;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.spotify-playlists .list .item:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-47px);
+}
